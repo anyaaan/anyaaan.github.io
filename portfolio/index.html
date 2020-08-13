@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Watanabe Ayaka's portfolio">
+  <meta name="keywords" content="portfolio">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <!--IE標準モード表示用-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <!--TELリンク防ぐスマホ用-->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <title>Hi! I'm Ayaka Watanabe! | Portflio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+  <link rel="stylesheet" href="css/colorbox.css">
+  <link rel="stylesheet" href="css/component.css">
+</head>
+
+<body>
+  <header class="header">
+
+    <div class="pageTOP">
+
+      <div class="top-icon">
+        <a href="index.html">
+          <img src="images/page01_03.jpg" alt="LOGO">
+        </a>
+      </div>
+
+    </div>
+    <!---- .pageTOP ---->
+
+    <nav id="top-nav">
+      <ul class="clearfix">
+        <li class="navLine"><a href="about.html">ABOUT ME</a></li>
+        <li class="navLine"><a href="works.html">WORKS</a></li>
+        <li class="navLine"><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="responsive-menu">
+      <div id="sp-nav">
+        <ul>
+          <li><a href="about.html">ABOUT ME</a></li>
+          <li><a href="works.html">WORKS</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <button class="sp-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </header>
+
+
+  <section class="profile">
+    <p class="main-pic">
+      <img id="main-picture1" src="images/カンプ_01.jpg" style="display: block;">
+      <img id="main-picture2" src="images/sosk_02.jpg">
+      <img id="main-picture3" src="images/fashion_03.jpg">
+      <img id="main-picture4" src="images/snow_04.jpg">
+    </p>
+
+
+    <article class="sidenav">
+      <svg class="filter" version="1.1">
+        <defs>
+          <filter id="gooeyness">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10"
+              result="gooey" />
+            <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+          </filter>
+        </defs>
+      </svg>
+
+      <div class="radios-boxes">
+
+        <div class="labels">
+          <label for="radio1" class="label">
+            <p>Ayaka</p>
+          </label>
+          <label for="radio2" class="label">
+            <p>Mama</p>
+          </label>
+          <label for="radio3" class="label">
+            <p>fashion</p>
+          </label>
+          <label for="radio4" class="label">
+            <p>Snowboard</p>
+          </label>
+        </div>
+
+        <div class="radios">
+          <input type="radio" name="radio" id="radio1" class="radio" value="r">
+          <input type="radio" name="radio" id="radio2" class="radio" value="k">
+          <input type="radio" name="radio" id="radio3" class="radio" value="t">
+          <input type="radio" name="radio" id="radio4" class="radio" value="s">
+          <div class="ball"></div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer>
+
+    <section class="snsBtn">
+      <ul>
+
+        <li><a href="#"><img src="images/fb.jpg" alt="fb"></a></li>
+        <li><a href="#"><img src="images/ins.jpg" alt="ins"></a></li>
+        <li><a href="#"><img src="images/tw.jpg" alt="tw"></a></li>
+      </ul>
+
+    </section>
+
+    <small>(C)&ensp;
+      <script>document.write(new Date().getFullYear());</script>&ensp;ayaka watanabe&eacute All right reseved.</small>
+  </footer>
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/gmap.js"></script>
+  <script src="https://maps.google.com/maps/api/js?sencor=true"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.colorbox-min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/jquery.dlmenu.js"></script>
+  <script src="js/function.js"></script>
+</body>
+
+</html>
