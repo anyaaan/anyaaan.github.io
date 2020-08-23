@@ -1,33 +1,31 @@
 @charset "utf-8";
-
 /************** 共通設定 **************/
+
 body {
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
-	font-size: 62.5%;
-	color: #666;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
+  font-size: 62.5%;
+  color: #666;
 }
 
 .clearfix::after {
-	content: "";
-	display: block;
-	clear: both;
+  content: "";
+  display: block;
+  clear: both;
 }
-
 
 /************** header **************/
 
 header.header {
-	width: 100%;
-	background-color: #f0f0f0;
-	height: 100px;
-	top: 0;
-	left: 0;
-
+  width: 100%;
+  background-color: #f0f0f0;
+  height: 100px;
+  top: 0;
+  left: 0;
 }
 
 header.header .top-icon {
-	float: left;
-	padding: 25px;
+  float: left;
+  padding: 25px;
 }
 
 .header nav {
@@ -35,66 +33,66 @@ header.header .top-icon {
   padding: 28px;
 }
 
-
 .header nav ul {
-	margin-top: 24px;
+  margin-top: 24px;
 }
 
 .header nav ul li {
-	float: left;
-	margin-right: 50px;
+  float: left;
+  margin-right: 50px;
 }
 
 .header nav ul li:last-child {
-	margin-right: 0;
+  margin-right: 0;
 }
 
 .header nav ul li a {
-	text-decoration: none;
-	color: coral;	
-	font-size: 1.6em;
-	position: relative;
+  text-decoration: none;
+  color: coral;
+  font-size: 1.6em;
+  position: relative;
 }
 
 .navLine a::after {
-	position: absolute;
-	bottom: -4px;
-	left: 0;
-	content: "";
-	height: 1px;
-	width: 100%;
-	background-color: #fff;
-	transform: scale(0);
-	transform-origin: center top;
-	transition: 0.3s;
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  transform: scale(0);
+  transform-origin: center top;
+  transition: 0.3s;
 }
 
 .navLine a:hover::after {
-	transform: scale(1);
+  transform: scale(1);
 }
 
 /************* footer ***************/
 
 footer {
-	width: 100%;
-	height: 115px;
-	background-color: #f0f0f0;
-	text-align: center;
+  width: 100%;
+  height: 115px;
+  background-color: #f0f0f0;
+  text-align: center;
 }
 
 footer .snsBtn ul {
   padding-top: 2.5em;
-  padding-bottom: 1.5em;	
+  padding-bottom: 1.5em;
 }
 
 footer .snsBtn img {
-	margin-top: -4px;
+  margin-top: -4px;
 }
 
 footer .snsBtn ul li {
-	display: inline;
-	margin: 1em;
+  display: inline;
+  margin: 1em;
 }
+
 /************* top ***************/
 
 .main-pic img {
@@ -105,180 +103,231 @@ footer .snsBtn ul li {
 /************* side nav ***************/
 
 section p {
-	position: relative;
-	top: 0;
-  }
-  
-  .sidenav  {
-	position: absolute;
-	right: 30px;
-	top: 350px;
-  }
-  
-  .filter {
-	position: absolute;
-	left: -9999px;
-  }
-  
-  .burger {
-	display: flex;
-	flex-direction: column;
-	padding: 30px;
-  }
-  
-  .radios-boxes {
-	display: flex;
-  }
-  
-  .radios {
-	display: flex;
-	filter: url('#gooeyness');
-	flex-direction: column;
-	overflow: hidden;
-	position: relative;
-  }
-  
-  .radio {
-	-moz-appearance: none;
-	-ms-appearance: none;
-	-webkit-appearance: none;
-	appearance: none;
-	border-radius: 50%;
-	border: 16px solid #e6b071;
-	cursor: pointer;
-	height: 60px;
-	margin: 10px;
-	outline: 0;
-	-webkit-tap-highlight-color: transparent;
-	transition: border-color 800ms;
-	width: 60px;
-  }
-  
-  .radio.active {
-	border-color: coral;
-  }
-  
-  .ball {
-	background: white;
-	border-radius: 50%;
-	height: 34px;
-	left: 23px;
-	pointer-events: none;
-	position: absolute;
-	top: 23px;
-	transform: translateY(-80px);
-	transition: transform 800ms;
-	width: 34px;
-  }
-  
-  .ball.pos0 {
-	transform: translateY(0px);
-  }
-  
-  .ball.pos1 {
-	transform: translateY(80px);
-  }
-  
-  .ball.pos2 {
-	transform: translateY(160px);
-  }
-  
-  .ball.pos3 {
-	transform: translateY(240px);
-  }
-  
-  .labels {
-	margin-left: 5px;
-  }
-  
-  .label {
-	color: #666;
-	cursor: pointer;
-	display: flex;
-	flex-direction: column;
-	font-size: 28px;
-	line-height: 50px;
-	padding: 15px 0;
-	-webkit-tap-highlight-color: transparent;
-	transition: color 800ms;
-  }
-  
-  .label p {
-	  text-align: right;
-  }
-  
-  .label.active {
-	color: coral;
-  } 
-
-  /************* profile ***************/
-.info {
-	text-align: center;
+  position: relative;
+  top: 0;
 }
 
-.ayakaphoto,
-.name {
-	display: inline-block;
+.sidenav {
+  position: absolute;
+  right: 30px;
+  top: 350px;
+}
+
+.filter {
+  position: absolute;
+  left: -9999px;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.radios-boxes {
+  display: flex;
+}
+
+.radios {
+  display: flex;
+  filter: url('#gooeyness');
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.radio {
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  border: 16px solid #e6b071;
+  cursor: pointer;
+  height: 60px;
+  margin: 10px;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+  transition: border-color 800ms;
+  width: 60px;
+}
+
+.radio.active {
+  border-color: coral;
+}
+
+.ball {
+  background: white;
+  border-radius: 50%;
+  height: 34px;
+  left: 23px;
+  pointer-events: none;
+  position: absolute;
+  top: 23px;
+  transform: translateY(-80px);
+  transition: transform 800ms;
+  width: 34px;
+}
+
+.ball.pos0 {
+  transform: translateY(0px);
+}
+
+.ball.pos1 {
+  transform: translateY(80px);
+}
+
+.ball.pos2 {
+  transform: translateY(160px);
+}
+
+.ball.pos3 {
+  transform: translateY(240px);
+}
+
+.labels {
+  margin-left: 5px;
+}
+
+.label {
+  color: #666;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  font-size: 28px;
+  line-height: 50px;
+  padding: 15px 0;
+  -webkit-tap-highlight-color: transparent;
+  transition: color 800ms;
+}
+
+.label p {
+  text-align: right;
+}
+
+.label.active {
+  color: coral;
+}
+
+/************* profile ***************/
+
+.info {
+  text-align: center;
+}
+
+.ayakaphoto, .name {
+  display: inline-block;
   margin-top: 9.0em;
 }
 
-.pr {
-	padding: 3em 0;
-	margin-left: 4em;
+.info2 h3 {
+  width: 100%;
+  font-size: 30px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  text-align: center;
+  position: relative;
+  display: inline-block;
 }
 
-.skill {
-	margin-bottom: 4em;
+.info2 h3:before, .info2 h3:after {
+  content: '';
+  position: absolute;
+  top: 52%;
+  display: inline-block;
+  width: 588px;
+  height: 1px;
+  background-color: coral;
 }
 
-.pr img,
-.skill img {
- width:  100%;
+.info2 h3:before {
+  left: 0;
 }
 
-
-
-/* #main  {
-	text-align: center;
-	font-weight: bold;
+.info2 h3:after {
+  right: 0;
 }
 
-.info img {
-	margin-top: 90px;
-}
-
-
-.info h2 {
-	font-size: 4.2em;
-	
-}
-
-.info ul {
-	font-size: 2.5em;
-	font-weight: lighter;
-}
-
-.info
 .info2 {
-	font-weight: lighter;
-} */
+  padding-top: 25px;
+  max-width: 1372px;
+  width: 100%;
+  margin: 0 auto;
+}
 
+.plofile {
+  font-size: 25px;
+  flex-basis: 96%;
+  line-height: 1.5em;
+}
 
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  max-width: 59%;
+}
+
+table th, td {
+  width: 100%;
+  font-size: 30px;
+  background-color: rgb(255, 127, 80, 0.7);
+}
+
+table th {
+  color: #fff;
+  padding: 21px 0px 22px 55px;
+}
+
+table td {
+  padding: 0px 57px 0px 0px;
+}
+
+.skill .topHeight {
+  padding-top: 50px;
+}
+
+.skill .underHeight {
+  padding-bottom: 50px;
+}
+
+#pr {
+  font-size: 25px;
+  line-height: 1.5em;
+}
+
+#pr .自己pr1 .自己pr2 .自己pr3 {
+  font-size: 20px;
+  flex-basis: 31%;
+  text-align: center;
+  padding: 8px 8px;
+}
+
+#pr .自己pr2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 2;
+  padding: 15px 0px;
+}
+
+#pr .自己pr3 {
+  padding-bottom: 5em;
+}
 
 /************* works ***************/
 
 #workList h3 {
-	font-size: 50px;
-	font-weight: bold;
-	margin-top: 100px;
-	margin-left: 30px;
-	margin-bottom: 50px;
-}
-#workList img {
-	vertical-align:bottom;
+  font-size: 50px;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-left: 30px;
+  margin-bottom: 50px;
 }
 
-.graphics{
+#workList img {
+  vertical-align: bottom;
+}
+
+.graphics {
   display: flex;
   flex-wrap: wrap;
 }
@@ -291,13 +340,15 @@ a.group1 {
   width: 100%;
 }
 
-.web{
+.web {
   display: flex;
   flex-wrap: wrap;
 }
+
 .web a img {
   padding-bottom: 50px;
 }
+
 a.group2 {
   flex-basis: 25%;
 }
@@ -308,6 +359,7 @@ a.group2 img {
 
 /************* responsive ***************
 /* humburger menu */
+
 .sp-menu {
   position: fixed;
   top: 20px;
@@ -320,8 +372,8 @@ a.group2 img {
   background: transparent;
   display: none;
   outline: none;
-
 }
+
 .sp-menu span {
   display: inline-block;
   -webkit-transition: all .4s;
@@ -339,15 +391,18 @@ a.group2 img {
   -webkit-transform: translateY(10px) rotate(45deg);
   transform: translateY(10px) rotate(45deg);
 }
+
 .sp-menu.active span:nth-of-type(2) {
   opacity: 0;
 }
+
 .sp-menu.active span:nth-of-type(3) {
   -webkit-transform: translateY(-10px) rotate(-45deg);
   transform: translateY(-10px) rotate(-45deg);
 }
 
 /* sp navigation */
+
 #sp-nav {
   position: fixed;
   top: 0;
@@ -356,10 +411,11 @@ a.group2 img {
   width: 100%;
   height: 100vh;
   opacity: 0;
-  background-color:rgba(53, 26, 209, 0.9);
+  background-color: rgba(139, 38, 221, 0.9);
   transition: all 0.3s ease-in-out;
   visibility: hidden;
 }
+
 #sp-nav.active {
   right: 0;
   opacity: 1;
@@ -373,9 +429,11 @@ a.group2 img {
   margin: 40px 0;
   padding: 40px 0;
 }
+
 #sp-nav ul li {
   list-style-type: none;
 }
+
 #sp-nav ul li a {
   display: block;
   font-size: 40px;
@@ -385,38 +443,31 @@ a.group2 img {
   text-decoration: none;
   color: #fff;
 }
+
 #sp-nav ul li a:hover {
   color: coral;
 }
 
 @media screen and (max-width: 769px) {
-	#top-nav {
-		display: none;
-	}
-
-	.radios-boxes {
-		display: none;
+  #top-nav {
+    display: none;
   }
-
+  .radios-boxes {
+    display: none;
+  }
   .sp-menu {
     display: block;
   }
-
   .main-pic img {
     display: block;
   }
-
   #workList h3 {
     text-align: center;
     color: coral;
   }
-  a.group1  {  
+  a.group1 {
     margin: auto;
-    flex-basis: 75%;  
+    flex-basis: 75%;
   }
-
-  a.group2 {
-  }
-  
-  
+  a.group2 {}
 }

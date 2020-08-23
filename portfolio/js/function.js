@@ -1,5 +1,22 @@
 /************* radioBtn ***************/
-const initRadioBtns = () => {
+  /**const initRadioBtns = () => {
+  let radios = document.querySelectorAll('.radio');
+  let labels = document.querySelectorAll('.label');
+  let ball = document.querySelector('.ball');
+  let prevRadio, prevLabel;
+  radios.forEach((radio, index) => {
+    radio.addEventListener('click', function (e) {
+      if (prevRadio) prevRadio.classList.toggle('active');
+      if (prevLabel) prevLabel.classList.toggle('active');
+      radio.classList.toggle('active');
+      prevRadio = radio;
+      labels[index].classList.toggle('active');
+      prevLabel = labels[index];
+      ball.className = `ball pos${index}`;
+    });
+  });
+  **/
+  const initRadioBtns = () => {
   let radios = document.querySelectorAll('.radio');
   let labels = document.querySelectorAll('.label');
   let ball = document.querySelector('.ball');
@@ -45,18 +62,6 @@ const initRadioBtns = () => {
 };
 
 /************* colorbox ***************/
-const initColorBox = () => {
-  $('.group1').colorbox({ rel: 'group1' });
-  $('.group2').colorbox({ rel: 'group2' });
-  /** 青線を消す **/
-  jQuery(document).on('cbox_closed', function () {
-    var reloadOnClosedSettings = jQuery.colorbox.reloadOnClosedSettings;
-    if (reloadOnClosedSettings.needReloadParent === true && reloadOnClosedSettings.reloadFunc && (typeof reloadOnClosedSettings.reloadFunc === "function")) {
-      reloadOnClosedSettings.reloadFunc();
-    }
-  });
-};
-
 /************* responsive humburger ***************/
 const initHumberger = () => {
   $('.sp-menu').on('click', function () {
