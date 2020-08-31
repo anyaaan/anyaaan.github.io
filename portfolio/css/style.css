@@ -28,18 +28,18 @@ header.header .top-icon {
   padding: 25px;
 }
 
-.header nav {
-  margin-left: 500px;
-  padding: 28px;
+.header nav ul {
+  text-align: center;
 }
 
-.header nav ul {
-  margin-top: 24px;
+.header nav {
+  font-size: 18px;
 }
 
 .header nav ul li {
-  float: left;
-  margin-right: 50px;
+  display: inline-block;
+  margin-right: 75px;
+  margin-top: 39px;
 }
 
 .header nav ul li:last-child {
@@ -60,7 +60,7 @@ header.header .top-icon {
   content: "";
   height: 1px;
   width: 100%;
-  background-color: #fff;
+  background-color: #e6b071;
   transform: scale(0);
   transform-origin: center top;
   transition: 0.3s;
