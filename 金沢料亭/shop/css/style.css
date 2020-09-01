@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+/************ 共通設定 ****************/
+
+body{
+	font-family: 'Yu Mincho Light','YuMincho','Yu Mincho','游明朝体','TsukuARdGothic-Regular','ヒラギノ明朝 ProN','Hiragino Mincho ProN',sans-serif;
+	font-size: 14px;
+	color: #fff;
+
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+
+	background-color: #dda0dd;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#wrapper {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+/************ header ****************/
+
+header {
+	background: url(../images/header_wasi.jpg) repeat;
+	height: 75px;
+	width: 100%;
+	min-width: 1000px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000000;
+}
+
+
+
+header h1 {
+	height: 75px;
+	width: 100px;
+	float:left;
+}
+
+nav {
+	height: 75px;
+	width: 500px;
+	float: right;
+}
+
+nav ul li {
+	display: inline-block;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 28px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #000;
+	padding: 0 50px 0 0;
+}
+
+nav ul li a.hokori {
+	margin-right: auto;
+}
+
+header p.goyoyaku {
+	width: 220px;
+	float: right;
+}
+
+
+/************ main ****************/
+
+
+/************ shop ****************/
+
+main#shop {
+	margin-top: 100px;
+}
+
+main #shop01 {
+	margin-bottom: 30px;
+	background-image: url(../images/01_shop/wasi.jpg);
+	height: 450px;
+	width: 960px;
+}
+
+main #shop01 dt {
+	float: left;
+}
+
+main #shop01 dd {
+	font-size: 25px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	line-height: 1.2;
+	color: #666;
+	padding: 25px 50px;
+	float: right;
+
+	writing-mode: tb-rl; /* IE独自仕様 */
+	writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl; /* for MS IE8+ */
+	-o-writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+}
+
+#shop02 {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+
+p#f {
+	position: absolute;
+	top: 70px;
+	left: 80px;
+	letter-spacing: 4px;
+	line-height: 1.8;
+	width: 300px;
+	height: 600px;
+	overflow: hidden;
+	font-size: 24px;
+	writing-mode: tb-rl; /* IE独自仕様 */
+	writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl; /* for MS IE8+ */
+	-o-writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+}
+
+
+
+
+/************ footer ****************/
+
+
+p.copy {
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	color: #fff;
+}
+
+
+/************ sns ****************/
