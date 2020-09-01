@@ -5,6 +5,9 @@ body {
   font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "Meiryo UI", "メイリオ", Meiryo, sans-serif;
   font-size: 62.5%;
   color: #666;
+  background-image: url(../images/background.jpg);
+  background-color:rgba(255,255,255,0.8);
+background-blend-mode:lighten;
 }
 
 .clearfix::after {
@@ -97,7 +100,6 @@ footer .snsBtn ul li {
 
 .main-pic img {
   width: 100%;
-  display: none;
 }
 
 /************* side nav ***************/
