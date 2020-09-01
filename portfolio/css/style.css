@@ -333,7 +333,7 @@ table td {
 }
 
 a.group1 {
-  flex-basis: 25%;
+  flex-basis: 20%;
 }
 
 .group1 img {
@@ -342,19 +342,10 @@ a.group1 {
 
 .web {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .web a img {
   padding-bottom: 50px;
-}
-
-a.group2 {
-  flex-basis: 25%;
-}
-
-a.group2 img {
-  width: 100%;
 }
 
 /************* responsive ***************
