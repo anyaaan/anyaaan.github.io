@@ -266,11 +266,11 @@ section p {
 table {
   border-collapse: collapse;
   margin: 0 auto;
-  max-width: 59%;
+  /* max-width: 59%; */
 }
 
 table th, td {
-  width: 100%;
+  /* width: 100%; */
   font-size: 30px;
   background-color: rgb(255, 127, 80, 0.7);
 }
@@ -295,13 +295,6 @@ table td {
 #pr {
   font-size: 25px;
   line-height: 1.5em;
-}
-
-#pr .自己pr1 .自己pr2 .自己pr3 {
-  font-size: 20px;
-  flex-basis: 31%;
-  text-align: center;
-  padding: 8px 8px;
 }
 
 #pr .自己pr2 {
@@ -445,22 +438,51 @@ a.group1 {
   #top-nav {
     display: none;
   }
+
   .radios-boxes {
     display: none;
   }
+
   .sp-menu {
     display: block;
   }
+
   .main-pic img {
     display: block;
   }
+
+  .ayakaphoto, .name{
+    width: 100%;
+  }
+  
+ .plofile {
+   font-size: 20px;
+ }
+
+ #pr {
+   font-size: 20px;
+ }
+ 
+ #pr .自己pr2 {
+  font-size: 25px;
+}
+
+
+  .info2 h3:before, .info2 h3:after {
+   width: 200px;
+  }
+
+  table th, td {
+    font-size: 20px;
+  }
+
   #workList h3 {
     text-align: center;
     color: coral;
   }
+
   a.group1 {
     margin: auto;
     flex-basis: 75%;
   }
-  a.group2 {}
 }
