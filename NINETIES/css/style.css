@@ -367,8 +367,16 @@ address {
 }
 
 #gmap {
+	/* width: 100%;
+	height: 400px; */
+}
+iframe {
 	width: 100%;
 	height: 400px;
+	mask-border: 0; 
+	border: 0; 
+	hyphens: "false";
+	tab-size: 0;	
 }
 
 /******** footer ********/

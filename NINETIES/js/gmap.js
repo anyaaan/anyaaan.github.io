@@ -1,5 +1,5 @@
 function initialize() {
-  var latlng = new google.maps.LatLng(35.608913, 139.668961);/*表示したい場所の経度、緯度*/
+  var latlng = new google.maps.LatLng(35.690973, 139.708276);/*表示したい場所の経度、緯度*/
   var myOptions = {
 	zoom: 17, /*拡大比率*/
     center: latlng, /*表示枠内の中心点*/
@@ -13,7 +13,7 @@ function initialize() {
 	scrollwheel: false,
     mapTypeControlOptions: { mapTypeIds: ['noText', google.maps.MapTypeId.ROADMAP] }/*表示タイプの指定*/
   };
-  var map = new google.maps.Map(document.getElementById('gmap'), myOptions);/*マップのID取得*/
+//   var map = new google.maps.Map(document.getElementById('gmap'), myOptions);/*マップのID取得*/
  
   /*スタイルのカスタマイズ*/
  var styleOptions = [{
