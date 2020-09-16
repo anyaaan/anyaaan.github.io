@@ -99,9 +99,15 @@ footer .snsBtn ul li {
 /************* top ***************/
 
 .main-pic img {
-  width: 100%;
+  width: 80%;
   display: none;
+  text-align: center;
 }
+
+.main-pic img #main-picture1 {
+  width: 40%;
+}
+
 
 /************* side nav ***************/
 
