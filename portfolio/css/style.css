@@ -104,11 +104,6 @@ footer .snsBtn ul li {
   text-align: center;
 }
 
-.main-pic img #main-picture1 {
-  width: 40%;
-}
-
-
 /************* side nav ***************/
 
 section p {
@@ -232,6 +227,7 @@ section p {
 .info2 h3 {
   width: 100%;
   font-size: 30px;
+  color: black;
   padding-top: 60px;
   padding-bottom: 50px;
   text-align: center;
@@ -268,6 +264,7 @@ section p {
   font-size: 25px;
   flex-basis: 96%;
   line-height: 1.5em;
+  color: black;
 }
 
 table {
@@ -302,6 +299,7 @@ table td {
 #pr {
   font-size: 25px;
   line-height: 1.5em;
+  color: black;
 }
 
 #pr .自己pr2 {
