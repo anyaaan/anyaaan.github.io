@@ -328,6 +328,11 @@ table th,td {
 	padding: 8px 8px;
 }
 
+#gallery .gy .group2 img {
+	width: 300px;
+	height: 250px;
+}
+
 @media screen and (max-width: 769px) {
 	#gallery .gy .group2 {
 		flex-basis: 100%;
