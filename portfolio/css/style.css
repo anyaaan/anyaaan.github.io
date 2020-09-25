@@ -7,7 +7,7 @@ body {
   color: #666;
   background-image: url(../images/background.jpg);
   background-color:rgba(255,255,255,0.8);
-background-blend-mode:lighten;
+  background-blend-mode:lighten;
 }
 
 .clearfix::after {
@@ -54,7 +54,7 @@ header.header .top-icon {
   text-decoration: none;
   color: coral;
   font-size: 1.6em;
-  /* position: relative; */
+  position: relative;
 }
 
 .navLine a::after {
@@ -221,7 +221,7 @@ section p {
 }
 
 .ayakaphoto, .name {
-  margin-top: 9.0em;
+  margin-top: 14em;
   display: inline-block;
 }
 
@@ -271,11 +271,9 @@ section p {
 table {
   border-collapse: collapse;
   margin: 0 auto;
-  /* max-width: 59%; */
 }
 
 table th, td {
-  /* width: 100%; */
   font-size: 30px;
   background-color: rgb(255, 127, 80, 0.7);
 }
