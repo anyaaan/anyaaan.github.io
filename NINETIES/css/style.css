@@ -196,30 +196,12 @@ nav ul li a {
 	text-align: center;
 }
 
-	/* position: static;
-    visibility: visible;
-    display: inline-block;
-    width: 550px;
-    height: 700px;
-    padding: 0px;
-    border: none;
-    max-width: 100%;
-    min-width: 180px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    min-height: 200px;
-} */
-
 @media screen and (max-width: 769px) {
-	/* .aside a {
-		width: 760px;
-	} */
 
 	.tw {
-		/* text-align: center; */
 		width: 330px;
 		margin: 0 auto;
-	}
+    	}
 }
 
 
